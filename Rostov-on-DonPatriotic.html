@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <title>Проект «Слайдер с фото» (PJ-02)</title>
+    <script defer src="./script/script.js"></script> 
+  </head>
+  <body>
+    <div class="container">
+      <div class="content">
+        <div class="content-nav">
+          
+            <ul class="link-container">
+              <li class="font_Yeseva-One"><a class="link link--active"  href="Rostov-on-Don.admiral.html">Rostov-on-Don.
+                admiral</a></li>
+              <li class="font_Yeseva-One"><a class="link" href="SochiThieves.html">Sochi Thieves</a></li>
+              <li class="font_Yeseva-One"><a class="link" href="Rostov-on-DonPatriotic.html">Rostov-on-Don Patriotic</a></li>              
+            </ul>
+          
+        </div>
+        <!--закончился content-nav -->
+
+        <!-- СЛАЙДЕР -->
+        <div class="slider-container">
+          <div class="slider">
+            <img
+              id="img_3"
+              src="./images/image 3.png"
+              alt="слайд Rostov-on-Don Patriotic"
+              aria-label="слайд Rostov-on-Don Patriotic"/>
+            <img
+              id="img_1"
+              src="./images/image 2.1.png"
+              alt=" слайд Rostov-on-Don, Admiral" 
+              aria-label="слайд Rostov-on-Don, Admiral"/>
+            <img
+              id="img_2"
+              src="./images/image 2.png"
+              alt="слайд Sochi Thieves"
+              aria-label="слайд Sochi Thieves"/>                       
+          </div>
+        </div>
+        <!--  закончился  СЛАЙДЕР -->
+
+        <!--  оболочка для левой части -->
+        <div
+          style="
+            width: 679px;
+            height: 482.37px;
+            position: absolute;
+            top: 72px;
+            left: 0px;">
+
+          <div class="content-title" style="margin-bottom: 34px">
+            <div
+              class="color_gold font_Yeseva-One letter_spacing_-7"
+              style="font-size: 27px; text-transform: uppercase">
+              Completed <br />
+              projects
+              <img
+                src="./images/Rectangle 6.2.png"
+                alt="декоративня полоса"
+                id="gold_line"
+              />
+            </div>
+          </div>
+          <!--закончился content-title -->
+
+          <!-- ОПИСАНИЕ -->
+          <div class="content-description">
+            <div class="content_description-items">
+              <div class="item_header color_white">
+                Only a small part of the work perform our company is presented
+                on the site work perform our company is presented. For 14 years
+                on in the struction market we have made .
+              </div>
+              <div class="item1">
+                <div
+                  class="font_Yeseva-One color_gold letter_spacing_-7 item_title">
+                  City:
+                </div>
+                <div class="font_Nunito-Sans color_white item_text">
+                  Rostov-on-Don Patriotic
+                </div>
+              </div>
+              <!--закончился item_1-->
+              <div class="item2">
+                <div
+                  class="font_Yeseva-One color_gold letter_spacing_-7 item_title">
+                  apartment area:
+                </div>
+                <div class="font_Nunito-Sans color_white item_text">93 m2                  
+                </div>
+              </div>
+              <!--закончился item_2 -->
+              <div class="item3">
+                <div
+                  class="font_Yeseva-One color_gold letter_spacing_-7 item_title">
+                  Repair time:
+                </div>
+                <div class="font_Nunito-Sans color_white item_text">
+                  3 months
+                </div>
+              </div>
+              <!--закончился citem_3 -->
+              <div class="item4">
+                <div
+                  class="font_Yeseva-One color_gold letter_spacing_-7 item_title">
+                  Repair Cost:
+                </div>
+                <div class="font_Nunito-Sans color_white item_text">
+                  Upon request
+                </div>
+              </div>
+              <!--закончился item_4 -->
+            </div>
+            <!--закончился content-description   items -->
+
+            <div class="arrow_container">
+              <div
+                class="circle_container">                
+                
+                <button id="toggle_button_1" 
+                  class="toggle_button-active">                  
+                </button>
+
+                <button id="toggle_button_2">                   
+                </button>
+
+                <button id="toggle_button_3">  
+                </button>                
+              </div>
+              <!--закончился circle_container"  -->
+              <button
+                class="prev-button color_white"
+                aria-label="Посмотреть предыдущий слайд">&#8592
+              </button>
+              <button
+                class="next-button color_white"
+                aria-label="Посмотреть следующий слайд">&#8594
+              </button>
+            </div>
+            <!-- закончился arrow-container-->
+          </div>
+          <!-- закончился content-description-->
+        </div>
+        <!--закончился оолочка для левой части  -->
+      </div>
+      <!--закончился content-->
+    </div>
+    <!--закончился container -->
+  </body>
+</html>
