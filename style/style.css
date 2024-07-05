@@ -1,0 +1,222 @@
+body {
+  width: 100%;
+}
+
+img {
+  object-fit: cover;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+}
+
+ul {
+  list-style-type:  none;
+  font-family: ;
+}
+
+li {
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+a {
+  text-decoration: none;
+  color: rgba(227, 184, 115, 1);
+ }
+ a:hover {  
+  border-bottom: 2px solid;
+  color: rgba(227, 184, 115, 1);
+ }
+
+ button {
+  width: 9.57px; 
+  height: 9.57px; 
+  background-color: rgba(255, 255, 255, 0.3); 
+  border-radius: 50%; 
+  border: none;
+  background-image: url('./images/Rectangle\ 7.4.png');
+  background-size: cover;
+ }
+
+/* общего применения */
+#gold_line {  
+  top: 70%;
+  transform: translateX(+40%);
+  width: 92px;
+  height: 1px;
+}
+
+.color_gold {
+  color: rgba(227, 184, 115, 1);
+}
+
+.color_white {
+  color: rgba(255, 255, 255, 1);
+}
+
+.font_Yeseva-One {
+  font-family: "Yeseva One";
+}
+
+.font_Nunito-Sans {
+  font-family: "Nunito Sans";
+}
+
+.letter_spacing_-7 {
+  letter-spacing: -7;
+}
+
+.item_title {
+  font-size: 18px;
+  text-transform: uppercase;
+  width: 213px;
+  height: 22px;
+  margin-bottom: 9px;
+}
+
+.item_text {
+  font-size: 13px;
+  width: auto;
+  height: auto;
+  line-height: 21.3px;
+}
+
+/* ОБЩИЙ КОНТЕЙНЕТ */
+.container {
+  position: relative;
+  display: flex;
+  max-width: 1440px;
+  height: 783px;
+  margin: auto;
+  background-color: #131313;
+}
+
+/* ВНУТРЕННИЙ КОНТЕЙНЕР ДЛЯ РАЗМЕЩЕНИЯ КОНТЕНТА */
+.content {
+  position: absolute;
+  top: 107px;
+  left: 134px;
+  width: 1171px;
+  height: 552.28px;
+  margin: auto;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-areas:
+    ". nav"
+    "title slider"
+    "description slider"
+    "description slider"
+    "arrows slider";
+}
+
+/* внутри блока content-description */
+.content_description-items {
+  width: 442px;
+  height: 390px;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas:
+    "header header header"
+    "content_1 content_2 ."
+    "content_3 content_4 .";
+}
+.item_header {
+  width: 442px;
+  grid-area: header;
+}
+.item1 {
+  grid-area: content_1;
+}
+.item2 {
+  grid-area: content_2;
+}
+.item3 {
+  grid-area: content_3;
+}
+.item4 {
+  grid-area: content_4;
+}
+
+/* НАВИГАЦИЯ  */
+.content-nav {  
+  grid-area: nav;  
+}
+
+/* ссылки */
+.link-container {   
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: start; 
+  margin-bottom: 45.36px; 
+  width:623px;
+  padding-left:0;
+}
+/* СЛАЙДЫ */
+
+/* слайдер */
+.slider-container {
+  /* перенесен из */
+  position: relative;
+  width: 679px;
+  height: 482.37px;
+  margin: 0 auto;
+  overflow: hidden;
+  grid-area: slider;  
+}
+
+.slider img {  
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/*   для стрелок перелистывания и кругов-кнопок слайдера */
+.arrow_container {  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+  width: 205.68px;
+  height: 13.28px;
+  grid-area: arrows;  
+}
+
+.circle_container{  
+  display: flex;
+  align-items: center; 
+  justify-content: space-evenly;
+  gap: 17.54px;  
+}
+
+.toggle_button-active { 
+  background-color: rgba(255, 255, 255, 1);  
+}
+
+/* стрелки перелистывания слайдов */
+.prev-button,   
+.next-button {
+  position: absolute;
+  top: -100%;
+  transform: translateY(-50%);
+  width: 13.28px;
+  height: 13.28px;
+  background-color: transparent; 
+  border: none;
+  font-size: 40px;
+}
+
+.prev-button {  
+  left: -10px;
+}
+
+.next-button {  
+  right: 30px;
+}
